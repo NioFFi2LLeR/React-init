@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
-	const [count, setCount] = useState(0);
+	const [count, setCount] = useState(0); // декларативный
 
 	return (
 		<>
@@ -19,10 +19,12 @@ function App() {
 			<h1>Vite + React</h1>
 			<div className="card">
 				<button onClick={() => setCount((count) => count + 1)}>
+					{' '}
+					{/* декларативный */}
 					count is {count}
 				</button>
 				<p>
-					<code>{new Date().getFullYear()}</code>
+					<code>Сейчас {new Date().getFullYear()} год.</code>
 				</p>
 			</div>
 			<p className="read-the-docs">
